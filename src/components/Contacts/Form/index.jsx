@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import './../styles.css';
 
 function Form({setContacts, contacts }) {
 
@@ -28,7 +29,7 @@ function Form({setContacts, contacts }) {
       <div>
         <input name='phone_number' type="text" placeholder='Phone Number' value={form.phone_number} onChange={onChangeInput} />
       </div>
-      <div>
+      <div className='btn'>
         <button onClick={onSubmit}>Add</button>
       </div>
     </form>
